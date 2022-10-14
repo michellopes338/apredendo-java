@@ -11,8 +11,9 @@ public class Condicionais {
         byte idade = leitor.nextByte();
         System.out.println("Está acompanhado por quantas pessoas? ");
         byte acompanhantes = leitor.nextByte();
+        boolean estaAcompanhado = acompanhantes >= 2;
 
-        if (idade >= 18 || acompanhantes >= 2) {
+        if (idade >= 18 || estaAcompanhado) {
             System.out.println("Seja bem vindo");
         } else {
             System.out.println("Tudo bem, pode entrar!");
